@@ -15,7 +15,7 @@ if not os.environ.get('PYTHONHTTPSVERIFY', '') == '0':
     ssl._create_default_https_context = ssl._create_unverified_context
 
 # --- 2. חיבור ל-AI (Gemini) ---
-API_KEY = ""
+API_KEY = "GOOGLE_API_KEY"
 genai.configure(api_key=API_KEY, transport='rest')
 
 
